@@ -1,4 +1,88 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+body{
+  background: hsl(0, 0%, 100%);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid hsl(220, 14%, 75%);
+  z-index: 5;
+}
+header .icon-menu{
+  display: none;
+}
+header h3{
+  color: black;
+  font-weight: 900;
+}
+nav{
+  color: hsl(223, 64%, 98%);
+  margin-left: 4rem;
+}
+nav:hover, nav:active{
+  text-decoration: underline;
+  text-decoration-color: hsl(26, 100%, 55%);
+}
+header .image-avatar{
+  border-radius: 50%;
+}
+section{
+  display: flex;
+}
+.picture img{
+  border-radius: 10px;
+}
+.photos{
+  padding: 5px;
+}
+.photos img:hover{
+  opacity: 1;
+}
+.first:nth-first-child(p){
+  color: hsl(223, 64%, 98%);
+}
+.first h1{
+  color: black;
+  font-weight: 900;
+}
+.first .para{
+  color: hsl(223, 64%, 98%);
+}
+h4{
+  color: black;
+  font-weight: 500;
+}
+h4 p{
+  color: white;
+  background: black;
+ padding: 5px;
+}
+.dollor{
+  text-decoration: line-through;
+  font-weight: 200;
+  color: hsl(220, 14%, 75%);
+}
+.btn{
+  color: black;
+}
+.btn img{
+  color: hsl(26, 100%, 55%);
+}
+button{
+  background: hsl(26, 100%, 55%);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btn img:hover{
+  color: hsl(25, 100%, 94%);
+}
+button:hover{
+  color: hsl(25, 100%, 94%);
 }
