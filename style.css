@@ -1,12 +1,22 @@
+@font-face {
+  font-family:Kumbh Sans ;
+  src: url(https://fonts.google.com/specimen/Kumbh+Sans);
+}
+  
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   border: none;
+  font-weight: 400, 700;
 }
 body{
   background: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+main{
+  margin: 10px;
 }
 header{
   display: flex;
@@ -14,6 +24,7 @@ header{
   align-items: center;
   border-bottom: 3px solid hsl(220, 14%, 75%);
   z-index: 5;
+  
 }
 header .icon-menu{
   display: none;
@@ -22,58 +33,76 @@ header h3{
   color: black;
   font-weight: 900;
 }
-nav{
-  color: hsl(223, 64%, 98%);
-  margin-left: 4rem;
+a{
+  margin-left: 2rem;
 }
-nav:hover, nav:active{
-  text-decoration: underline;
-  text-decoration-color: hsl(26, 100%, 55%);
+
+a:hover, a:active, a:visited{
+  color: hsl(219, 9%, 45%);
+  border-bottom: 2px solid hsl(26, 100%, 55%) ;
 }
-header .image-avatar{
-  border-radius: 50%;
+
+.image-avatar{
+  width: 30%;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+.cart{
+  margin-bottom: 20px;
 }
 section{
   display: flex;
+  margin-top: 50px;
 }
 .picture img{
   border-radius: 10px;
 }
-.photos{
+.photos img{
   padding: 5px;
 }
 .photos img:hover{
   opacity: 1;
 }
-.first:nth-first-child(p){
-  color: hsl(223, 64%, 98%);
+.first{
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.sneaker{
+  color: hsl(219, 9%, 45%) ;
+ font-weight: 700;
 }
 .first h1{
   color: black;
   font-weight: 900;
 }
-.first .para{
-  color: hsl(223, 64%, 98%);
+.para{
+  color: hsl(219, 9%, 45%);
 }
 h4{
+  font-weight: 900;
   color: black;
-  font-weight: 500;
+ 
 }
 h4 p{
+  font-weight: normal;
+  display: inline;
   color: white;
   background: black;
- padding: 5px;
+ padding: 2px;
+ border-radius: 5px;
+ opacity: 0.8;
 }
-.dollor{
+.dollar{
   text-decoration: line-through;
-  font-weight: 200;
-  color: hsl(220, 14%, 75%);
+  font-weight: 900;
+  color: hsl(219, 9%, 45%);
 }
-.btn{
-  color: black;
+.amount{
+  display: inline;
 }
 .btn img{
   color: hsl(26, 100%, 55%);
+  margin: 5px;
 }
 button{
   background: hsl(26, 100%, 55%);
@@ -84,5 +113,5 @@ button{
   color: hsl(25, 100%, 94%);
 }
 button:hover{
-  color: hsl(25, 100%, 94%);
+  background: hsl(25, 100%, 94%);
 }
