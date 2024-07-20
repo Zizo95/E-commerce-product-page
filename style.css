@@ -13,11 +13,9 @@
 }
 body{
   background: hsl(0, 0%, 100%);
-  font-size: 16px;
+  
 }
-main{
-  margin: 10px;
-}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -32,9 +30,12 @@ header .icon-menu{
 header h3{
   color: black;
   font-weight: 900;
+  margin-left: 2rem;
+  font-size: 2rem;
 }
 a{
   margin-left: 2rem;
+  color: hsl(219, 9%, 45%);
 }
 
 a:hover, a:active, a:visited{
@@ -47,15 +48,26 @@ a:hover, a:active, a:visited{
   margin-bottom: 5px;
   margin-left: 30px;
 }
+.image-avatar:hover{
+  border:2px solid hsl(26, 100%, 55%);
+  cursor: pointer;
+  border-radius: 50%;
+}
 .cart{
   margin-bottom: 20px;
+  cursor: pointer;
 }
 section{
   display: flex;
-  margin-top: 50px;
+  margin-top: 50px ;
+ margin-left: 100px;
 }
+.picture{
+  margin-left: 50px;
+ }
 .picture img{
   border-radius: 10px;
+  cursor: pointer;
 }
 .photos img{
   padding: 5px;
@@ -64,24 +76,30 @@ section{
   opacity: 1;
 }
 .first{
-  margin-left: 70px;
-  margin-top: 30px;
+  margin-left: 130px;
+  margin-top: 50px;
 }
 .sneaker{
   color: hsl(219, 9%, 45%) ;
  font-weight: 700;
+ margin-bottom: 1rem;
 }
 .first h1{
   color: black;
   font-weight: 900;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 .para{
   color: hsl(219, 9%, 45%);
+  margin-bottom: 1rem;
+  width: 70%;
+  font-size: 1.2rem;
 }
 h4{
   font-weight: 900;
   color: black;
- 
+  margin-bottom: 0.5rem;
 }
 h4 p{
   font-weight: normal;
@@ -96,18 +114,24 @@ h4 p{
   text-decoration: line-through;
   font-weight: 900;
   color: hsl(219, 9%, 45%);
+  margin-bottom: 1rem;
 }
 .amount{
   display: inline;
+  margin-right: 1.5rem;
 }
 .btn img{
   color: hsl(26, 100%, 55%);
-  margin: 5px;
+ margin-right: 2rem;
+ cursor: pointer;
 }
 button{
   background: hsl(26, 100%, 55%);
-  padding: 5px 10px;
+  padding: 5px 30px;
   border-radius: 5px;
+ align-content: space-between;
+ font-weight: 700;
+ cursor: pointer;
 }
 .btn img:hover{
   color: hsl(25, 100%, 94%);
