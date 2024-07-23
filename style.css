@@ -73,7 +73,9 @@ section{
   padding: 5px;
 }
 .photos img:hover{
-  opacity: 1;
+  opacity: 0.5;
+  border: 3px solid hsl(26, 100%, 55%) ;
+  border-radius: 10px;
 }
 .first{
   margin-left: 130px;
