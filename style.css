@@ -57,6 +57,11 @@ a:hover, a:active, a:visited{
   margin-bottom: 20px;
   cursor: pointer;
 }
+.cart-amount{
+  position: absolute;
+  color:hsl(26, 100%, 55%);
+  font-weight: 700;
+}
 section{
   display: flex;
   margin-top: 50px ;

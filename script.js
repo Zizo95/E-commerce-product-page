@@ -1,10 +1,32 @@
- const cart = documnet.querySelector(".cart");
- const cartBox = document.querySelector(".cart-box");
- const imageOne = document.querySelector(".image-1");
- const imageTwo = document.querySelector(".image-2");
- const imageThree = document.querySelector(".image-3");
- const imageFour = document.querySelector(".image-4");
+
+const mainImage = document.querySelector(".main-image");
+ const smallImages = document.querySelectorAll(".image-1");
  const iconMinus = document.querySelector(".icon-minus");
  const iconPlus = document.querySelector(".icon-plus");
- const button = document.querySelector("button");
+ const amountElm = document.querySelector(".amount");
  
+
+ smallImages.forEach(smallImage => {
+    smallImage.addEventListener("click", () => {
+        mainImage.src = smallImage.src.replace('-thumbnail', '')
+    })
+ })
+
+
+ iconMinus.addEventListener("click", (e) => {
+    e.preventDefault();
+    let inputValue = parseInt(amountElm.textContent, 10);
+    if (inputValue > 0) {
+        inputValue--;
+        amountElm.textContent = inputValue;
+    }
+});
+
+iconPlus.addEventListener("click", (e) => {
+    e.preventDefault();
+    let inputValue = parseInt(amountElm.textContent, 10);
+    if (!isNaN(inputValue)) {
+        inputValue++;
+        amountElm.textContent = inputValue;
+    }
+});
