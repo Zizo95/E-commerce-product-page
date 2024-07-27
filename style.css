@@ -216,6 +216,9 @@ position: absolute;
   .first{
     margin-left: 3rem;
   }
+  nav{
+    width: 50%;
+  }
   
   .main-image{
     width: 312px;
