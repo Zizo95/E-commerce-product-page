@@ -4,7 +4,9 @@ const mainImage = document.querySelector(".main-image");
  const iconMinus = document.querySelector(".icon-minus");
  const iconPlus = document.querySelector(".icon-plus");
  const amountElm = document.querySelector(".amount");
- 
+ const menu = document.querySelector(".icon-menu");
+ const navBar = document.querySelector("nav");
+ const close = document.querySelector(".icon-close");
 
  smallImages.forEach(smallImage => {
     smallImage.addEventListener("click", () => {
@@ -30,3 +32,11 @@ iconPlus.addEventListener("click", (e) => {
         amountElm.textContent = inputValue;
     }
 });
+
+menu.addEventListener("click", () => {
+navBar.style.display = "block";
+})
+
+close.addEventListener("click", () => {
+    navBar.style.display = "none";
+    })
